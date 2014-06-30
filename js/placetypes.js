@@ -16,7 +16,7 @@ var network = new OpenLayers.Layer.WMS("Transportation", urlCloud, {
 	visibility: false
 });
 var placetypes = new OpenLayers.Layer.WMS("Placetypes", urlCloud, {
-	layers: ["TCquintile","UCquintile", "TCthreshold","UCthreshold","UrbanTownCenters"],
+	layers: ["UrbanTownCenters"],
 	transparent: true,
 	'sphericalMercator': true,
 	format: "image/png"
@@ -49,7 +49,7 @@ var heatmaps = new OpenLayers.Layer.WMS("Heatmaps", urlCloud, {
     singleTile: true, ratio: 1
 });
 var landuse = new OpenLayers.Layer.WMS("Land Use", urlCloud, {
-	layers: ["Generalized Zoning", "Parcels by Land Use","Green Corridor", "Green Hub"],
+	layers: ["Green Corridor", "Green Hub"],
 	transparent: true,
 	'sphericalMercator': true,
 	format: "image/png"
